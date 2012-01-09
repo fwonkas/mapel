@@ -58,6 +58,11 @@ module Mapel
         self
       end
 
+      def grayscale
+        @commands << "-type Grayscale"
+        self
+      end
+
       def gravity(type = :center)
         @commands << "-gravity #{type}"
         self
